@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tokopedia Catalog | Randy Varianda</title>
+  <meta name="description" content="Streamlining Tokopedia Product Inventory with Catalog. Case study by Randy Varianda.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="back" href="../index.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back to Home</a>
+    <div class="cs-intro">
+      <img class="logo" src="../assets/img/Z0M57o32BjLw4dHKZxOdZeJcZb0.png" alt="Tokopedia logo" width="40" height="40">
+      <h1>Streamlining Tokopedia Product Inventory with Catalog</h1>
+      <dl class="meta">
+        <dt>Role</dt><dd>Product Designer</dd>
+        <dt>Platform</dt><dd>Desktop</dd>
+        <dt>Duration</dt><dd>2 Sprint (4 Weeks)</dd>
+      </dl>
+    </div>
+    <nav class="toc" aria-label="Sections">
+      <a href="#discovery">Discovery</a>
+      <a href="#defining">Defining</a>
+      <a href="#exploration">Exploration</a>
+      <a href="#validation">Validation</a>
+      <a href="#takeaways">Takeaways</a>
+    </nav>
+    <div class="side-foot"><div class="side-row"><a href="https://t.me/randyvrnd" target="_blank" rel="noopener">@randyvrnd</a></div></div>
+  </aside>
+
+  <main class="main">
+    <div class="cover" style="--c:rgb(14,102,70)"><img src="../assets/img/uDGoIgP33XVpavpn4WJbqFyfvUY.png" alt="Catalog feature on the Tokopedia add-product page"></div>
+
+    <section class="section" id="discovery">
+      <h2>Discovery</h2>
+      <div class="section-body">
+        <div class="block">
+          <h3>Context</h3>
+          <p>Tokopedia had over 6 billion products in its database with no visibility into product types at the SKU level, making catalog management nearly impossible at scale.</p>
+          <p>Through workshops with the seller inventory and catalog teams, we aligned on a solution: connecting each product to an existing catalog in Tokopedia to bring structure and visibility.</p>
+        </div>
+        <div class="block">
+          <h3>Benefit</h3>
+          <p>Working with the product and catalog teams, we identified three core benefits:</p>
+          <div class="grid-3">
+            <div class="tile"><h4>For Tokopedia</h4><ul><li>Able to know supply &amp; demand</li><li>Able to make a better model for price recommendation</li><li>Improve Product listing quality</li><li>Increase feature adoption rate</li></ul></div>
+            <div class="tile"><h4>For Tokopedia Seller</h4><ul><li>Improve product discoverability</li><li>Improve Product Quality</li><li>Faster adding product</li></ul></div>
+            <div class="tile"><h4>For Tokopedia Buyer</h4><ul><li>Improve buyer’s browsing experience</li></ul></div>
+          </div>
+        </div>
+        <div class="block">
+          <h3>How does it work?</h3>
+          <p>When a seller's product is linked to a catalog, the system surfaces recommendations for photos, videos, specs, descriptions, and pricing — all pulled from catalog data.</p>
+          <figure class="figure"><img src="../assets/img/GezTpvaI6b0FRacyhXrtYvVubDw.png" alt="How catalog recommendations work" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="defining">
+      <h2>Defining Requirement</h2>
+      <div class="section-body">
+        <div class="block">
+          <h3>Prioritization</h3>
+          <p>Given the scope, we worked with the PM, catalog team, and engineering to phase the rollout. Phase 1 focused on photo and description catalog for phones, electronics, and gadgets only.</p>
+          <figure class="figure"><img src="../assets/img/yeDPLuXD4jE2EiRe5LidkNoFjM.png" alt="Prioritization matrix" loading="lazy"></figure>
+          <div class="grid-2">
+            <div class="tile"><h4>Phase 1</h4><ul><li>Product Photo Catalog</li><li>Product Description Catalog</li><li>HP, Electronic &amp; Gadget category product only</li></ul></div>
+            <div class="tile"><h4>Phase 2</h4><ul><li>Video Catalog</li><li>Specification Catalog</li><li>Price Recommendation</li></ul></div>
+          </div>
+        </div>
+        <div class="block">
+          <h3>Mapping Requirement</h3>
+          <p>Mapping requirements ensured all stakeholders had a shared understanding of the goals. I proposed potential solutions for each requirement, then worked with the PM to prioritize what was both impactful and technically feasible.</p>
+          <figure class="figure"><img src="../assets/img/fKYR3MAibjuGtR9XddT5OHub9k.png" alt="Requirement mapping" loading="lazy"></figure>
+          <figure class="figure"><img src="../assets/img/gvSZswjOuzkdvSevCuP5CsBsihQ.png" alt="Requirement mapping detail" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="exploration">
+      <h2>Design Exploration</h2>
+      <div class="section-body">
+        <div class="block">
+          <h3>User Flow</h3>
+          <p>I mapped the full seller journey for assigning a catalog to a product. The flow: set product name and category → apply catalog → receive photo and description recommendations → apply to product.</p>
+          <figure class="figure"><img src="../assets/img/zuCTFwWws8oLi0w6F7CclIKFvM.png" alt="User flow" loading="lazy"></figure>
+        </div>
+        <div class="block">
+          <h3>Explore Information Architecture</h3>
+          <p>I explored the current information architecture of the Add Product page, regrouping fields into more logical sections. After stakeholder review, we aligned on explore position #2.</p>
+          <figure class="figure"><img src="../assets/img/yCEYI6lfjDg3AXWwlCvUoLnKFc.png" alt="Information architecture explorations" loading="lazy"></figure>
+        </div>
+        <div class="block">
+          <h3>Design Component Exploration</h3>
+          <p>Design component explorations for the catalog feature.</p>
+          <div class="grid-2">
+            <figure class="figure"><img src="../assets/img/NpmZA3fk9sSefDjSKLaKD4uMVU.png" alt="Catalog component exploration" loading="lazy"></figure>
+            <figure class="figure"><img src="../assets/img/ynbOpmwuTgWGaqodw6er5mn1I.png" alt="Catalog component exploration" loading="lazy"></figure>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="block">
+            <h4>Explore Interaction #1</h4>
+            <h3>Option to See Catalog First</h3>
+            <p>Seller selects a catalog, then reviews photo and description recommendations before applying them. Content can be edited at any time.</p>
+            <figure class="figure"><img src="../assets/img/C0bskecY7QPMhUeaKX620gDo6Zs.gif" alt="Prototype: see catalog first" loading="lazy"></figure>
+          </div>
+          <div class="block">
+            <h4>Explore Interaction #2</h4>
+            <h3>Auto Apply Content Catalog</h3>
+            <p>Catalog content is automatically applied once selected. Sellers can review and edit afterward.</p>
+            <figure class="figure"><img src="../assets/img/FI9TCXPDnqLTaqgR3YdWqULs6JM.gif" alt="Prototype: auto apply catalog" loading="lazy"></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="validation">
+      <h2>Design Validation</h2>
+      <div class="section-body">
+        <div class="block">
+          <h3>Usability Testing</h3>
+          <p>To validate the design, we ran usability testing with sellers across different shop types to understand their expectations, behaviors, and preference between the two catalog interaction approaches.</p>
+          <div class="grid-2">
+            <div class="tile"><h4>Objective</h4><ul><li>What seller expectation about catalog feature</li><li>Seller behaviour when adding photo or fill description for their product</li><li>What preferability approach when applying catalog to their product</li><li>What their opinion if we switch section name and photo position</li></ul></div>
+            <div class="tile"><h4>Target User</h4><ul><li>All Type of Shop</li><li>Seller with category (HP &amp; Gadget, Electronic)</li><li>Preferred Desktop User</li></ul></div>
+          </div>
+          <figure class="figure"><img src="../assets/img/A1V0zEWYZhxZr7ol6AtaZgUvs.png" alt="Usability testing session" loading="lazy"><figcaption>*Documentation</figcaption></figure>
+        </div>
+        <div class="block">
+          <h3>Synthesizing UT Result</h3>
+          <p>I synthesized the usability testing findings to identify key insights and patterns. This informed the final design decisions for the feature.</p>
+          <figure class="figure"><img src="../assets/img/0i8OC6E32hf7FGYYzJMEfz99M.png" alt="Usability testing synthesis" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="takeaways">
+      <h2>Final Design &amp; Takeaways</h2>
+      <div class="section-body">
+        <div class="block">
+          <figure class="figure"><img src="../assets/img/q3HnFJ3bgicFAjCfDIwrFzZnEPM.png" alt="Final design" loading="lazy"></figure>
+          <figure class="figure"><img src="../assets/img/xZ8gadVftWSzb0foOH84WpO9Y.png" alt="Final design" loading="lazy"></figure>
+          <figure class="figure"><img src="../assets/img/1teoYSgVxiiIImTJCsu4ed9R0.png" alt="Final design" loading="lazy"></figure>
+          <figure class="figure"><img src="../assets/img/Nhlcuu4QKKMLat9BDtSxFFQX3I.png" alt="Final design" loading="lazy"></figure>
+        </div>
+        <div class="block">
+          <h3>Design Impact</h3>
+          <p>Launched in Q1 2023, the feature drove measurable efficiency gains for sellers managing catalog products, and received positive feedback across the board.</p>
+          <div class="stats"><div class="stat"><strong>520K</strong><span>HP, Electronic &amp; Gadget category product assigned to product catalog</span></div></div>
+          <div class="grid-2">
+            <blockquote class="voice">"The feature is very helpful, i think if this recommendation not only on photo &amp; description, that will much better."<cite>Panda Electronic</cite></blockquote>
+            <blockquote class="voice">"Now i don't have to think about the photo, and description, i just use catalog feature, and i can edit it afterward."<cite>Gerbang Online</cite></blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p class="section credit">Designed &amp; Developed by Randy Varianda</p>
+  </main>
+
+  <script src="../assets/site.js" defer></script>
+</body>
+</html>
