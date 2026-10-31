@@ -1,5 +1,7 @@
 # Randy Varianda portfolio
 
+Live: https://randyvarianda.github.io/portfolio/
+
 Static rebuild of [randyvarianda.com](https://randyvarianda.com) (originally made in Framer): plain HTML, one stylesheet (`assets/style.css`) and a small script (`assets/site.js`). No build step.
 
 - `index.html`: home, with the Case Study / Website / Template tabs
